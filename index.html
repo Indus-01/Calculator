@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="app">
+        <div class="value">
+            <div class="value"><input type='text' placeholder="0" readonly="true" id="number"></div>
+        </div>
+        <div class="buttons">
+            <div class="button-grid-4">
+                <button onclick="show('1')">1</button>
+                <button onclick="show('2')">2</button>
+                <button onclick="show('3')">3</button>
+                <button onclick="show('4')">4</button>
+                <button onclick="show('+')">+</button>
+            </div>
+            <div class="button-grid-4">
+                <button onclick="show('5')">5</button>
+                <button onclick="show('6')">6</button>
+                <button onclick="show('7')">7</button>
+                <button onclick="show('8')">8</button>
+                <button onclick="show('-')">-</button>
+            </div>
+            <div class="button-grid-4">
+                <button onclick="show('9')">9</button>
+                <button onclick="show('0')">0</button>
+                <button onclick="show('*')">*</button>
+                <button onclick="show('/')">/</button>
+                <button onclick="show('.')">.</button>
+            </div>
+            <div class="button-grid-4">
+                <button id="cls">AC</button>
+                <button onclick="show('%')">%</button>
+                <button id="equals" onclick="equals()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
